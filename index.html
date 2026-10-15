@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a1714" />
+  <title>Navalha de Ouro — Barbearia Clássica</title>
+  <meta name="description" content="Barbearia tradicional desde 1962. Cortes clássicos, barba na navalha e agendamento direto pelo WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Navalha de Ouro — início">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+        </span>
+        <span class="logo-text">Navalha <span class="gold">de Ouro</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">A Casa</a>
+        <a href="#barbeiros">Barbeiros</a>
+        <a href="#contato">Contato</a>
+        <a href="#agendar" class="btn btn-primary btn-sm">Agendar</a>
+      </nav>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu móvel" hidden>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">A Casa</a>
+      <a href="#barbeiros">Barbeiros</a>
+      <a href="#contato">Contato</a>
+      <a href="#agendar" class="btn btn-primary">Agendar horário</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Início -->
+    <section id="inicio" class="hero grain">
+      <img src="images/hero.png" alt="Interior da barbearia com cadeiras clássicas de couro e luz âmbar" class="hero-bg" />
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="line"></span>Barbearia tradicional · Est. 1962</p>
+        <h1>Estilo clássico, <span class="gold">navalha</span> afiada.</h1>
+        <p class="hero-text">
+          Cortes à moda antiga, barba com toalha quente e aquele cafezinho passado na hora.
+          Escolha seu horário e confirme direto pelo WhatsApp.
+        </p>
+        <div class="hero-actions">
+          <a href="#agendar" class="btn btn-primary btn-lg">Agendar horário</a>
+          <a href="#" class="btn btn-outline btn-lg js-whatsapp" data-message="Olá! Gostaria de saber mais sobre a barbearia." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+        <dl class="stats">
+          <div><dt>Anos de tradição</dt><dd>60+</dd></div>
+          <div><dt>Clientes atendidos</dt><dd>12 mil</dd></div>
+          <div><dt>Avaliação</dt><dd class="rating">4.9 <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="heading center">
+          <p class="eyebrow"><span class="line"></span>Tabela de preços<span class="line"></span></p>
+          <h2>Nossos serviços</h2>
+        </div>
+        <div class="price-frame">
+          <div class="price-inner">
+            <ul class="price-list" id="price-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section-card about">
+      <div class="stripes"></div>
+      <div class="container about-grid">
+        <div class="about-image">
+          <div class="about-frame" aria-hidden="true"></div>
+          <img src="images/shave.png" alt="Barbeiro fazendo barba com navalha e toalha quente" loading="lazy" />
+        </div>
+        <div>
+          <div class="heading">
+            <p class="eyebrow"><span class="line"></span>A casa</p>
+            <h2>Tradição passada de geração em geração</h2>
+          </div>
+          <p class="muted about-text">
+            Desde 1962 a Navalha de Ouro mantém viva a arte da barbearia clássica. Aqui o tempo
+            desacelera: cada corte é feito com calma, atenção aos detalhes e o cuidado de quem
+            ama o ofício.
+          </p>
+          <ul class="features">
+            <li>
+              <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg></span>
+              <div><h3>Técnica clássica</h3><p class="muted small">Tesoura, pente e navalha como manda a tradição.</p></div>
+            </li>
+            <li>
+              <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+              <div><h3>Toalha quente</h3><p class="muted small">Ritual completo para uma barba macia e sem irritação.</p></div>
+            </li>
+            <li>
+              <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2v2M14 2v2M6 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/></svg></span>
+              <div><h3>Café e boa prosa</h3><p class="muted small">Ambiente acolhedor, música boa e cafezinho por conta da casa.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barbeiros -->
+    <section id="barbeiros" class="section">
+      <div class="container">
+        <div class="heading center">
+          <p class="eyebrow"><span class="line"></span>O time<span class="line"></span></p>
+          <h2>Nossos barbeiros</h2>
+        </div>
+        <ul class="barbers" id="barbers"></ul>
+      </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendar" class="section-card section grain">
+      <div class="container narrow">
+        <div class="heading center">
+          <p class="eyebrow"><span class="line"></span>Agendamento<span class="line"></span></p>
+          <h2>Reserve sua cadeira</h2>
+        </div>
+        <p class="muted booking-intro">
+          Preencha os dados abaixo e enviaremos tudo pronto para o nosso WhatsApp. É só confirmar
+          a mensagem e aguardar nossa resposta.
+        </p>
+
+        <form id="booking-form" class="booking-form" novalidate>
+          <div class="field full">
+            <label for="name">Seu nome</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="60" placeholder="Ex.: João Silva" required />
+          </div>
+          <div class="field">
+            <label for="service">Serviço</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Selecione</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="barber">Barbeiro</label>
+            <select id="barber" name="barber">
+              <option value="">Sem preferência</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="date">Data</label>
+            <input id="date" name="date" type="date" required />
+            <p class="hint">Atendemos de terça a sábado.</p>
+          </div>
+          <fieldset class="field full">
+            <legend>Horário</legend>
+            <div class="slots" id="slots"></div>
+          </fieldset>
+          <div class="field full">
+            <label for="notes">Observações (opcional)</label>
+            <textarea id="notes" name="notes" rows="3" maxlength="300" placeholder="Algum estilo de referência ou pedido especial?"></textarea>
+          </div>
+          <p class="error full" id="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-primary btn-lg full">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            Agendar pelo WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="heading center">
+          <p class="eyebrow"><span class="line"></span>Visite-nos<span class="line"></span></p>
+          <h2>Horários &amp; endereço</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="box">
+            <h3 class="box-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Funcionamento
+            </h3>
+            <dl class="hours">
+              <div><dt>Terça a Sexta</dt><dd>09h — 20h</dd></div>
+              <div><dt>Sábado</dt><dd>08h — 18h</dd></div>
+              <div><dt>Domingo e Segunda</dt><dd class="closed">Fechado</dd></div>
+            </dl>
+          </div>
+          <div class="box box-flex">
+            <h3 class="box-title">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Onde estamos
+            </h3>
+            <address class="muted" id="address">Rua Augusta, 1962 — Consolação, São Paulo/SP</address>
+            <ul class="contact-list">
+              <li>
+                <a href="#" class="js-whatsapp" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                  <span id="whatsapp-display">(11) 99999-9999</span>
+                </a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg>
+                @navalhadeouro
+              </li>
+            </ul>
+            <a href="#" id="map-link" class="btn btn-outline-gold" target="_blank" rel="noopener noreferrer">Ver no mapa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="stripes stripes-thin"></div>
+    <div class="container footer-inner">
+      <p class="logo-text">Navalha <span class="gold">de Ouro</span></p>
+      <p class="muted small">&copy; <span id="year"></span> Navalha de Ouro. Tradição desde 1962.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float js-whatsapp" data-message="Olá! Gostaria de agendar um horário." target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
